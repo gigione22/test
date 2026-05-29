@@ -1,5 +1,5 @@
  
-calculation_of_unit = 24
+calculation_of_unit = 28
 name_of_unit = "hours"
 
 def day_to_units(num_of_days):
