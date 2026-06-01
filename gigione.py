@@ -1,5 +1,5 @@
  
-calculation_of_unit = 28
+calculation_of_unit = 30
 name_of_unit = "hours"
 
 def day_to_units(num_of_days):
@@ -7,6 +7,7 @@ def day_to_units(num_of_days):
 
 gigione = input("hey user intro un numar care sa fie convertiti \n")
 print("Gigione")
+print("!")
 print(type('gigione'))
 
 
