@@ -16,3 +16,17 @@ jobs:
 
       - name: Run custom JavaScript
         run: node -e "console.log('My first Node.js experiment')"
+
+      - name: Explore the Linux runner
+        run: |
+          echo "Operating system:"
+          echo "$RUNNER_OS"
+
+          echo "Current directory:"
+          pwd
+
+          echo "Files in current directory:"
+          ls -la
+
+          echo "Home directory:"
+          echo "$HOME"
