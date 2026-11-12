@@ -32,4 +32,4 @@ jobs:
           pip install -r requirements.txt
 
       - name: Run Python script
-        run: python gigione.py
+        run: python gigione.py 25
