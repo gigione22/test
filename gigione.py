@@ -1,13 +1,9 @@
- 
-calculation_of_unit = 28
-name_of_unit = "hours"
+import sys
 
-def day_to_units(num_of_days):
-         print(f"{num_of_days} day are {calculation_of_unit*num_of_days} {name_of_unit}")
+if len(sys.argv) < 2:
+    print("Usage: python gigione.py <number>")
+    sys.exit(1)
 
-gigione = input("hey user intro un numar care sa fie convertiti \n")
-print("Gigione")
-print(type('gigione'))
+gigione = sys.argv[1]
 
-
-
+print(f"Numarul introdus este: {gigione}")
