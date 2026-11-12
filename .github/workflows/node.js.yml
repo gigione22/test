@@ -1,5 +1,7 @@
 name: Node.js Workflow Lab
 
+permissions:
+  contents: read
 
 on:
   workflow_dispatch:
