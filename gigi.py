@@ -7,5 +7,5 @@ def fact_iter(n):
         
         
         
-print(fact_iter(9))
+print(fact_iter(12))
      
