@@ -1,0 +1,39 @@
+name: Node.js Workflow Lab
+
+permissions:
+  contents: read
+
+on:
+  workflow_dispatch:
+
+  push:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Display a message
+        run: echo "Push trigger test successful!"
+
+      - name: Show Node.js version
+        run: node --version
+
+      - name: Run custom JavaScript
+        run: node -e "console.log('My first Node.js experiment')"
+
+      - name: Explore the Linux runner
+        run: |
+          echo "Operating system:"
+          echo "$RUNNER_OS"
+
+          echo "Current directory:"
+          pwd
+
+          echo "Files in current directory:"
+          ls -la
+
+          echo "Home directory:"
+          echo "$HOME"
